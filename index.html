@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Sawadogo Daouda - Portfolio</title>
+  <link rel="stylesheet" href="icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">DAODEV</div>
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()"><i class="bi bi-moon-fill"></i></button>
+    </div>
+  </nav>
+
+  <!-- Section Accueil -->
+  <section id="accueil" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="fade-in">Bonjour, je suis <span class="highlight">Sawadogo Daouda</span></h1>
+        <p class="subtitle fade-in-delay">Étudiant en Informatique</p>
+        <p class="description fade-in-delay-2">
+          Étudiant en informatique, motivé et sérieux, je possède
+          de bonnes bases en réseau, développement web ,
+          Infographie sur Adobe Photoshop.
+          Je suis capable de m’adapter rapidement et j’aime
+          apprendre les nouvelle technologies, passionné
+          de l’informatique, je cherche une opportunité pour
+          mettre mes compétences en pratique et contribuer
+          efficacement aux missions qui me seront confiées.
+        </p>
+        <div class="cta-buttons fade-in-delay-3">
+          <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn-secondary">Me contacter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projets" class="projects">
+    <div class="container">
+      <h2 class="section-title">Mes Projets</h2>
+      <div class="projects-grid">
+        <!-- Projet 1 -->
+        <div class="project-card">
+          <div class="project-icon"><i class="bi bi-laptop"></i></div>
+          <h3>Gestion Imobilière</h3>
+          <p class="project-description">
+            Un site web responsive créé pour une equipe de 3 Étudiant dont je fait partie
+            Développé avec HTML, CSS et JavaScript et php avec une base de données MySQL.
+          </p>
+          <p class="project-note" style="font-size: 0.85rem; color: #f97316; margin-top: 0.5rem; font-style: italic;">
+            ℹ️ Note: Ce projet utilise PHP et MySQL. La vraie page ne peut pas s'afficher sans serveur. La démo ci-dessous explique les fonctionnalités.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Techno 1 - HTML</span>
+            <span class="tag">Techno 2 - CSS</span>
+            <span class="tag">Techno 3 - JavaScript</span>
+            <span class="tag">Techno 3 -Php</span>
+          </div>
+          <a href="immobilier_projet/demo.html" class="project-link">Voir la démo →</a>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="project-card">
+          <div class="project-icon"><i class="bi bi-controller"></i></div>
+          <h3>Calculatrice</h3>
+          <p class="project-description">
+            Une Calculatrice developper en html,css et JavaScript réalisé lors d'un projet de classe
+          </p>
+          <div class="project-tags">
+            <span class="tag">Techno 1 - Html</span>
+            <span class="tag">Techno 2 - Css</span>
+            <span class="tag">Techno 3- JavaScript</span>
+          </div>
+          <a href="calculatrice/index.html" class="project-link">Voir le projet →</a>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="project-card">
+          <div class="project-icon"><i class="bi bi-phone"></i></div>
+          <h3>Weyana Finance</h3>
+          <p class="project-description">
+            WEYANA Finance est une plateforme fintech panafricaine dont le produit phare est l’accès
+            digital, simple et sécurisé à la BRVM (Bourse Régionale des Valeurs Mobilières).
+
+          </p>
+          <div class="project-tags">
+            <span class="tag">Techno 1 - Dart</span>
+            <span class="tag">Techno 2 - Flutter </span>
+          </div>
+          <a href="#" class="project-link">Voir le projet →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Compétences -->
+  <section id="competences" class="skills">
+    <div class="container">
+      <h2 class="section-title">Compétences</h2>
+      <div class="skills-grid">
+        <!-- Compétence 1 -->
+        <div class="skill-card" style="background-image: url('images/competence1.jpg'); background-size: cover; background-position: center;">
+          <div class="skill-card-overlay">
+            <div class="skill-icon"><i class="bi bi-globe"></i></div>
+            <h3>Compétence 1 - Développement Web</h3>
+            <p>HTML, CSS, JavaScript, création de sites responsive</p>
+            <div class="skill-level">
+              <div class="skill-bar" style="width: [%]%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compétence 2 -->
+        <div class="skill-card" style="background-image: url('images/competence2.jpg'); background-size: cover; background-position: center;">
+          <div class="skill-card-overlay">
+            <div class="skill-icon"><i class="bi bi-code-slash"></i></div>
+            <h3>Compétence 2 -  Programmation</h3>
+            <p>Python, Java, résolution de problèmes algorithmiques</p>
+            <div class="skill-level">
+              <div class="skill-bar" style="width: [%]%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compétence 3 -->
+        <div class="skill-card" style="background-image: url('images/competence3.jpg'); background-size: cover; background-position: center;">
+          <div class="skill-card-overlay">
+            <div class="skill-icon"><i class="bi bi-tools"></i></div>
+            <h3>Compétence 3 - Outils</h3>
+            <p> Git/GitHub, VS Code, terminal Linux,Photoshop,Figma</p>
+            <div class="skill-level">
+              <div class="skill-bar" style="width: [%]%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compétence 4 -->
+        <div class="skill-card" style="background-image: url('images/competence4.jpg'); background-size: cover; background-position: center;">
+          <div class="skill-card-overlay">
+            <div class="skill-icon"><i class="bi bi-people"></i></div>
+            <h3>Compétence 4 -  Soft Skills</h3>
+            <p>Travail d'équipe, communication, gestion de projet</p>
+            <div class="skill-level">
+              <div class="skill-bar" style="width: [%]%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contactez-moi</h2>
+      <p class="contact-intro">
+         N'hésitez pas à me contacter pour toute opportunité ou collaboration !
+      </p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon"><i class="bi bi-envelope"></i></span>
+          <a href="mailto:[votre.email@exemple.com]">mediateurdaouda@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon"><i class="bi bi-file-earmark-pdf"></i></span>
+          <a href="cv.pdf" download>Voir mon CV</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon"><i class="bi bi-whatsapp"></i></span>
+          <a href="https://wa.me/55441195" target="_blank">WhatsApp</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon"><i class="bi bi-github"></i></span>
+          <a href="https://github.com/DAODEV" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Sawadogo Daouda. Tous droits réservés.</p>
+      <p>Fait avec <i class="bi bi-heart-fill"></i> et Git/GitHub</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
