@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Certificats - Sawadogo Daouda</title>
+  <link rel="stylesheet" href="icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .certificats-container {
+      max-width: 800px;
+      margin: 100px auto;
+      padding: 40px 20px;
+    }
+    .certificats-list {
+      display: grid;
+      gap: 15px;
+    }
+    .certificat-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+      background: #f5f5f5;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .certificat-item:hover {
+      background: #e8e8e8;
+      transform: translateX(5px);
+    }
+    .dark-theme .certificat-item {
+      background: #2a2a2a;
+    }
+    .dark-theme .certificat-item:hover {
+      background: #333333;
+    }
+    .certificat-name {
+      flex: 1;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .certificat-link {
+      padding: 10px 20px;
+      background: #f97316;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+    .certificat-link:hover {
+      background: #ea580c;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #f97316;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">DAODEV</div>
+      <ul class="nav-links">
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="index.html#projets">Projets</a></li>
+        <li><a href="index.html#competences">Compétences</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()"><i class="bi bi-moon-fill"></i></button>
+    </div>
+  </nav>
+
+  <div class="certificats-container">
+    <a href="index.html#contact" class="back-link">← Retour</a>
+    
+    <h1>Mes Certificats</h1>
+    <p>Cliquez sur le certificat pour le télécharger :</p>
+    
+    <div class="certificats-list">
+      <div class="certificat-item">
+        <span class="certificat-name">📜 Création des vidéos & images avec IA</span>
+        <a href="certificats.pdf/CERTIFICAT%20CREATION%20DES%20VIDEOS%20&%20IMAGES%20AVEC%20IA.pdf" download class="certificat-link">Télécharger</a>
+      </div>
+      <div class="certificat-item">
+        <span class="certificat-name">📊 Data Analyse</span>
+        <a href="certificats.pdf/CERTIFICAT%20DATA%20ANALYSE.pdf" download class="certificat-link">Télécharger</a>
+      </div>
+      <div class="certificat-item">
+        <span class="certificat-name">🤖 Data Sciences & IA</span>
+        <a href="certificats.pdf/CERTIFICAT%20DATA%20SCIENCES%20&%20IA.pdf" download class="certificat-link">Télécharger</a>
+      </div>
+      <div class="certificat-item">
+        <span class="certificat-name">🐍 Développement Python (Niveau Intermédiaire à Avancé)</span>
+        <a href="certificats.pdf/CERTIFICAT%20DEVELOPPEMENT%20PYTHON%20NIVEAU%20INTERMEDIAIRE%20A%20AVANCE.pdf" download class="certificat-link">Télécharger</a>
+      </div>
+      <div class="certificat-item">
+        <span class="certificat-name">🐍 Programmation (Niveau Débutant Python)</span>
+        <a href="certificats.pdf/CERTIFICAT%20PROGRAMMATION%20NIVEAU%20DEBUTANT%20PYTHON.pdf" download class="certificat-link">Télécharger</a>
+      </div>
+      <div class="certificat-item">
+        <span class="certificat-name">💬 Savoir communiquer avec les IA</span>
+        <a href="certificats.pdf/CERTIFICAT%20SAVOIR%20COMMUNIQUER%20AVEC%20LES%20IA.pdf" download class="certificat-link">Télécharger</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
