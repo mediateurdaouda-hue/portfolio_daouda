@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Imobilière - Demo</title>
+    <link rel="stylesheet" href="apropos.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        .demo-header {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .demo-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .demo-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .demo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .demo-section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .demo-section h2 {
+            color: #6366f1;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .demo-section h3 {
+            color: #8b5cf6;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .demo-section p {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .feature-list li {
+            padding: 0.5rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: #555;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #6366f1;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .tech-badge {
+            background: linear-gradient(135deg, #818cf8, #6366f1);
+            color: white;
+            padding: 0.8rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding: 0.7rem 1.5rem;
+            background: #6366f1;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background: #8b5cf6;
+            transform: translateY(-2px);
+        }
+        
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .screenshot {
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #ddd;
+        }
+        
+        .screenshot h4 {
+            color: #6366f1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .screenshot-placeholder {
+            background: linear-gradient(135deg, #e0e7ff, #f3e8ff);
+            height: 200px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-header">
+        <h1>Gestion Imobilière</h1>
+        <p>Plateforme de gestion et location de propriétés</p>
+    </div>
+    
+    <div class="demo-container">
+        <a href="../index.html" class="back-button">← Retour au portfolio</a>
+        
+        <div class="demo-section">
+            <h2>À propos du projet</h2>
+            <p>
+                Un site web responsive créé pour une equipe de 3 étudiants dont je fais partie. 
+                Cette plateforme permet la gestion complète des propriétés immobilières, la location, 
+                la vente et la gestion des rendez-vous entre clients et agents immobiliers.
+            </p>
+        </div>
+        
+        <div class="demo-section">
+            <h2>Fonctionnalités principales</h2>
+            <ul class="feature-list">
+                <li>Authentification et gestion des utilisateurs</li>
+                <li>Gestion des propriétés (ajout, modification, suppression)</li>
+                <li>Système de location et vente</li>
+                <li>Prise de rendez-vous</li>
+                <li>Messagerie entre agents et clients</li>
+                <li>Tableau de bord pour les différents rôles (agent, client, bailleur, manager)</li>
+                <li>Système de favoris</li>
+                <li>Statistiques et rapports</li>
+                <li>Galerie d'images pour les propriétés</li>
+                <li>Recherche et filtrage avancé</li>
+            </ul>
+        </div>
+        
+        <div class="demo-section">
+            <h2>Technologies utilisées</h2>
+            <div class="tech-stack">
+                <div class="tech-badge">HTML5</div>
+                <div class="tech-badge">CSS3</div>
+                <div class="tech-badge">JavaScript</div>
+                <div class="tech-badge">PHP</div>
+                <div class="tech-badge">MySQL</div>
+                <div class="tech-badge">Responsive</div>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2>Architecture du projet</h2>
+            <h3>Structure des dossiers</h3>
+            <ul class="feature-list">
+                <li><strong>formulaire/</strong> - Gestion de l'authentification et du profil utilisateur</li>
+                <li><strong>proprietes/</strong> - Gestion des propriétés et leurs détails</li>
+                <li><strong>rendezvous/</strong> - Système de prise de rendez-vous et messagerie</li>
+                <li><strong>images/</strong> - Galerie et uploads d'images</li>
+                <li><strong>sql/</strong> - Base de données et structure</li>
+            </ul>
+        </div>
+        
+        <div class="demo-section">
+            <h2>Rôles utilisateurs</h2>
+            <h3>1. Client</h3>
+            <p>Peut parcourir les propriétés, ajouter des favoris, prendre des rendez-vous et communiquer avec les agents.</p>
+            
+            <h3>2. Agent immobilier</h3>
+            <p>Peut ajouter des propriétés, gérer son portefeuille, consulter les rendez-vous et communiquer avec les clients.</p>
+            
+            <h3>3. Bailleur</h3>
+            <p>Peut gérer ses propriétés à louer, consulter les demandes de location et gérer ses transactions.</p>
+            
+            <h3>4. Manager</h3>
+            <p>Supervise l'ensemble du système, valide les propriétés, gère les utilisateurs et consulte les statistiques.</p>
+        </div>
+        
+        <div class="demo-section">
+            <h2>Pages principales</h2>
+            <div class="screenshots">
+                <div class="screenshot">
+                    <h4>Accueil</h4>
+                    <div class="screenshot-placeholder">
+                        Page d'accueil avec liste des propriétés
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <h4>Authentification</h4>
+                    <div class="screenshot-placeholder">
+                        Formulaires de connexion et inscription
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <h4>Tableau de bord</h4>
+                    <div class="screenshot-placeholder">
+                        Espace personnel selon le rôle
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <h4>Propriétés</h4>
+                    <div class="screenshot-placeholder">
+                        Catalogue de propriétés avec détails
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <h4>Rendez-vous</h4>
+                    <div class="screenshot-placeholder">
+                        Gestion des rendez-vous
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <h4>Messagerie</h4>
+                    <div class="screenshot-placeholder">
+                        Communication utilisateurs
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2>Apprentissages et compétences</h2>
+            <ul class="feature-list">
+                <li>Développement web full-stack</li>
+                <li>Gestion de bases de données relationnelles</li>
+                <li>Travail en équipe avec Git/GitHub</li>
+                <li>Design responsive et UX/UI</li>
+                <li>Gestion des sessions et authentification</li>
+                <li>Upload et gestion de fichiers</li>
+                <li>Sécurité des données</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

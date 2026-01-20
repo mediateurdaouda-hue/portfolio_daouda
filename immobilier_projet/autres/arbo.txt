@@ -1,0 +1,34 @@
+/Projet_Immobilier/
+├── /formulaire/                # Pour les pages d'authentification et tableaux de bord
+│   ├── auth.php
+│   ├── connexion.php
+│   ├── inscription.php
+│   ├── confirmation.php
+│   ├── deconnexion.php
+│   ├── tableau_bord_client.php
+│   ├── tableau_bord_bailleur.php
+│   ├── tableau_bord_agent.php
+│   ├── tableau_bord_manager.php
+│   ├── style.css               # Style pour Auth, connexion, inscription
+│   ├── style_tableaux.css      # Style pour tous les tableaux de bord
+│   ├── script.js               # JS pour basculer formulaire connexion/inscription
+│   └── /uploads/               # Dossier photos de profil utilisateurs
+│       └── default.png
+│
+├── /proprietes/                # Gestion des propriétés
+│   ├── ajouter_propriete.php
+│   ├── consulter_proprietes.php
+│   ├── details_propriete.php
+│   ├── valider_propriete.php
+│   ├── style_proprietes.css    # Style des pages propriétés
+│   └── /uploads/               # Dossier images des propriétés
+│
+├── /rendezvous/                # Gestion des rendez-vous
+│   ├── prise_rdv.php
+│   ├── tableau_rdv_manager.php
+│   └── style_rdv.css
+│
+├── /sql/
+│   └── base_projet.sql         # Script pour créer les tables
+│
+├── README.txt                  # Instructions d'installation et de démarrage

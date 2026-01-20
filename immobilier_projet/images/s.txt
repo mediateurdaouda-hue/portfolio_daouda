@@ -1,0 +1,7 @@
+<?php foreach ($tableData as $row): ?>
+                    <tr>
+                        <td><?php echo htmlspecialchars($row['id']); ?></td>
+                        <td><?php echo htmlspecialchars($row['nom']); ?></td>
+                        <td><?php echo htmlspecialchars($row['mot_de_passe']); ?></td>
+                    </tr>
+                <?php endforeach; ?>
