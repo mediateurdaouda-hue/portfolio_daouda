@@ -1,1 +1,0 @@
--- Structure des tables utilisateurs, proprietes, propriete_images, rendezvous
