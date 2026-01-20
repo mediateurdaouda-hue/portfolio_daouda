@@ -1,0 +1,20 @@
+{
+  "name": "Ma WebApp Immo",
+  "short_name": "Immo+",
+  "start_url": "/index.php",
+  "display": "standalone",
+  "theme_color": "#ff6600",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
