@@ -546,9 +546,18 @@ section {
 }
 
 .footer p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255, 255, 255);
   margin: 0.5rem 0;
   font-weight: 500;
+}
+.contact-item {
+    flex-direction: column; /* icône au-dessus du texte */
+    text-align: center;
+}
+
+.contact-item i {
+    font-size: 80px;
+    margin-bottom: 10px;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -607,3 +616,4 @@ section {
     justify-content: space-between;
   }
 }
+
